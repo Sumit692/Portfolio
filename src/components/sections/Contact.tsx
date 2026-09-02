@@ -17,10 +17,12 @@ export default function Contact() {
     if (!name || !email || !message) return;
 
     setIsSubmitting(true);
-    const key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+    const key =
+      process.env.NEXT_PUBLIC_WEB3FORMS_KEY ||
+      "17466442-59da-47fa-8840-0c1fddfb8e1d";
 
-    // If an access key exists, submit to Web3Forms API
-    if (key && key !== "YOUR_ACCESS_KEY_HERE" && key.trim() !== "") {
+    // Submit to Web3Forms API
+    if (key && key.trim() !== "") {
       try {
         const res = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
