@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08]">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
             <span className="text-[11px] font-mono tracking-widest text-[#A1A1A6] uppercase">
-              AI ENGINEER · FULL STACK DEVELOPER · SOFTWARE DEVELOPER
+              AI ENGINEER · FULL STACK DEVELOPER · SOFTWARE DEVELOPER · BUILDER
             </span>
           </div>
 
