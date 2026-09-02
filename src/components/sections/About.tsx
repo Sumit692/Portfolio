@@ -15,11 +15,11 @@ export default function About() {
       sublabel: "Atria Institute / VTU",
     },
     {
-      value: 5,
+      value: 7,
       decimals: 0,
       suffix: "+",
       label: "Projects",
-      sublabel: "AI, 3D & Full-Stack",
+      sublabel: "AI, Full-Stack & Systems",
     },
     {
       value: 2,

@@ -2,7 +2,9 @@
 
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, CheckCircle2 } from "lucide-react";
+import { X, ExternalLink, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
+import { GithubIcon } from "@/components/ui/Icons";
 import { Project } from "@/types";
 
 interface ProjectModalProps {
@@ -101,6 +103,46 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               className="overflow-y-auto overscroll-contain p-6 sm:p-8 space-y-8 flex-1 focus:outline-none"
               tabIndex={0}
             >
+              {/* Quick Action Links */}
+              <div className="flex flex-wrap gap-4">
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atelier-btn-primary text-xs px-5 py-2.5"
+                  >
+                    <span>Launch Live Platform</span>
+                    <ExternalLink size={14} />
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atelier-btn-secondary text-xs px-5 py-2.5"
+                  >
+                    <GithubIcon size={14} />
+                    <span>Inspect Source Code</span>
+                  </a>
+                )}
+              </div>
+
+              {/* Project Image Preview */}
+              {project.image && (
+                <div className="relative aspect-video w-full rounded-xl overflow-hidden border border-white/[0.08] bg-[#161616] shadow-xl">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    unoptimized
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                </div>
+              )}
+
               {/* Narrative Overview */}
               <div className="space-y-2">
                 <h3 className="text-xs font-mono tracking-widest text-[#8E8E93] uppercase">

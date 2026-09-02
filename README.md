@@ -22,22 +22,40 @@ This website departs completely from conventional cyber/HUD/terminal cliches. It
 
 ## 📂 Featured Engineering Projects
 
-### 01. SOLVIX — AI Solar Planner & Geospatial Optimizer
-- **Stack:** React.js, Next.js, Three.js, React Three Fiber, Leaflet, Node.js
-- **Capabilities:** Interactive 3D terrain elevation mesh, geospatial coordinate mapping, constraint-based PV layout optimization, and financial ROI estimation.
-- **Live Demo:** [https://ai-portfolio-ruby.vercel.app/](https://ai-portfolio-ruby.vercel.app/)
+### 01. RamayanaVerse — Cinematic & Interactive Epic Digital Journey
+- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS v4, Prisma, PostgreSQL, Framer Motion
+- **Capabilities:** Interactive chronological timeline, spatial cartography from Ayodhya to Lanka, character relationship graphs, and cinematic soundscapes.
+- **Live Demo:** [https://ramayana-verse.vercel.app/](https://ramayana-verse.vercel.app/) · **GitHub:** [Sumit692/ramayana-verse](https://github.com/Sumit692/ramayana-verse)
 
-### 02. VAANI — AI Text Assist & Inclusive Document Narration
-- **Stack:** Python, Flask, Tesseract OCR, Hugging Face Transformers, Text-to-Speech
-- **Capabilities:** High-accuracy OCR extraction, transformer-driven academic summarization, and natural neural speech synthesis.
+### 02. VAANI AI — Multimodal Accessibility & Document Narration
+- **Stack:** Python, Flask, Google Gemini AI, Tesseract OCR, gTTS, PyPDF2
+- **Capabilities:** Scanned document ingestion, OCR pre-processing, Gemini-driven contextual simplification, and neural text-to-speech narration.
+- **Live Demo:** [https://vaani-ai-textassist-1.onrender.com/](https://vaani-ai-textassist-1.onrender.com/) · **GitHub:** [Sumit692/Vaani-AI-TextAssist](https://github.com/Sumit692/Vaani-AI-TextAssist)
 
-### 03. SkillCraft Interactive Suite
-- **Stack:** HTML5, CSS3, JavaScript ES6+, LocalStorage API, Keyframe Animations
-- **Capabilities:** Scientific calculator, state-driven task tracking, minimax-inspired game state machines, and micro-interactions.
+### 03. Bangalore Real Estate Valuation Platform
+- **Stack:** Python, Scikit-Learn, Flask, Pandas, NumPy, JavaScript, Leaflet, Web Speech API
+- **Capabilities:** Supervised ML regression, hands-free voice assistant search, interactive Leaflet micro-market heatmaps, and investment yield analytics.
+- **Live Demo:** [https://house-price-prediction-model-xi.vercel.app/](https://house-price-prediction-model-xi.vercel.app/) · **GitHub:** [Sumit692/House-Price-prediction-model-](https://github.com/Sumit692/House-Price-prediction-model-)
 
-### 04. AI Holographic Laboratory OS
-- **Stack:** Next.js, Three.js, React Three Fiber, Framer Motion, GSAP, Web Audio API
-- **Capabilities:** Procedural WebGL shaders, frequency-modulated audio synthesis, and hardware-adaptive GPU rendering tiers.
+### 04. LUMI — AI Multi-Subject CS Tutor Chatbot
+- **Stack:** Python, Flask, Google Gemini API, JavaScript, HTML5, CSS3
+- **Capabilities:** Multi-domain computer science reasoning, syntax highlighting with code explanations, interactive practice mode, and lightweight streaming.
+- **Live Demo:** [https://lumi-ai-chatbot.onrender.com/](https://lumi-ai-chatbot.onrender.com/) · **GitHub:** [Sumit692/Lumi-AI-Chatbot](https://github.com/Sumit692/Lumi-AI-Chatbot)
+
+### 05. Music Catalog Insights Platform
+- **Stack:** React.js, Node.js, Express.js, MongoDB, Mongoose, Tailwind CSS
+- **Capabilities:** Global catalog search with iTunes proxy, CRUD personal library management, custom ratings & notes, and AI-generated listening profile insights.
+- **Live Demo:** [https://music-catalog-platform.vercel.app/](https://music-catalog-platform.vercel.app/) · **GitHub:** [Sumit692/Music-catalog-platform](https://github.com/Sumit692/Music-catalog-platform)
+
+### 06. TaskFlow — Enterprise Java Servlets & MySQL Task Manager
+- **Stack:** Java Servlets, JSP, JDBC, MySQL, Apache Tomcat, MVC Architecture
+- **Capabilities:** Multi-user MVC architecture, session authentication, connection-pooled JDBC access, and ACID-compliant relational SQL transactions.
+- **GitHub:** [Sumit692/Simple-TODO-Application](https://github.com/Sumit692/Simple-TODO-Application)
+
+### 07. COVID-19 Clinical Diagnostic Management System
+- **Stack:** PHP, MySQL, Apache, Bootstrap, Chart.js, SQL
+- **Capabilities:** End-to-end sample lifecycle tracking, role-based admin security, public patient report verification portal, and analytical testing metrics.
+- **GitHub:** [Sumit692/Covid19-Testing-Management-System](https://github.com/Sumit692/Covid19-Testing-Management-System)
 
 ---
 

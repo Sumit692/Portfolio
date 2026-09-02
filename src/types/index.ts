@@ -5,7 +5,8 @@ export interface Project {
   subtitle: string;
   period: string;
   description: string;
-  category: "AI & Optimization" | "Accessibility & NLP" | "Micro-interactions" | "3D Systems";
+  category: string;
+  image?: string;
   tech: string[];
   features: string[];
   overview: string;

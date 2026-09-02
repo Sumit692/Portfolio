@@ -2,105 +2,188 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    id: "solvix",
+    id: "ramayana-verse",
     number: "01",
-    title: "SOLVIX",
-    subtitle: "AI Solar Planner & Geospatial Optimizer",
-    period: "Feb 2026 — June 2026",
+    title: "RamayanaVerse",
+    subtitle: "Cinematic & Interactive Epic Digital Journey",
+    period: "2026",
+    category: "Full-Stack & Cultural Tech",
+    image: "/images/projects/ramayana.jpg",
+    demo: "https://ramayana-verse.vercel.app/",
+    github: "https://github.com/Sumit692/ramayana-verse",
+    accentColor: "#F59E0B",
     description:
-      "An AI-powered geospatial engineering platform designed to optimize utility-scale solar deployments. Translates terrain elevation models into constraint-optimized solar layouts with real-time financial ROI simulations.",
-    category: "AI & Optimization",
-    tech: ["React.js", "Next.js", "Three.js", "React Three Fiber", "Leaflet", "Node.js", "Tailwind CSS"],
-    features: [
-      "Interactive 3D terrain elevation mesh rendered with custom normal-mapped shaders.",
-      "Geospatial coordinate mapping with dynamic latitude/longitude panel orientation.",
-      "Constraint-based solar array layout considering slope thresholds, azimuth, and inter-row shading.",
-      "Financial analysis module estimating capital expenditure, levelized cost of energy (LCOE), and payback horizon."
-    ],
+      "An immersive, cinematic, AI-powered platform transforming the Ramayana into an interactive digital journey through stories, characters, chronological timelines, sacred geography, and ancient philosophy.",
     overview:
-      "Solvix bridges civil engineering, geospatial data science, and web graphics to automate utility-scale photovoltaic planning. By importing raw elevation data, project planners simulate panel density and sunlight exposure in minutes rather than weeks.",
+      "RamayanaVerse combines modern web engineering (Next.js 16, React 19, Tailwind CSS v4, Framer Motion, and Prisma) with classical storytelling. The platform replaces static text with interactive spatial cartography, genealogical relationship graphs, and chronological Kandas exploration.",
     problem:
-      "Manual solar site planning requires disparate GIS tools, CAD drafting, and separate economic spreadsheets. This causes friction, miscalculated shading coefficients, and delayed feasibility studies.",
+      "Classical cultural narratives and foundational epics are traditionally locked in dense, non-interactive textual formats that struggle to engage younger digital-native generations and global audiences.",
     solution:
-      "A unified, browser-native 3D platform combining WebGL mesh generation, geospatial coordinate projection, algorithmic panel placement, and live financial modeling in a single high-performance canvas.",
-    github: "https://github.com/Sumit692",
-    demo: "https://ai-portfolio-ruby.vercel.app/",
-    accentColor: "#3B82F6"
+      "Engineered an interactive spatial web platform featuring chronological timeline scrubbing, genealogical relationship graphs, location exploration from Ayodhya to Lanka, and fluid viewport choreography.",
+    features: [
+      "Interactive Chronological Timeline exploring the Bala, Ayodhya, Aranya, Kishkindha, Sundara, and Yuddha Kandas.",
+      "Spatial Ancient Cartography tracking sacred geolocations from Ayodhya to Lanka with historical context.",
+      "Character Genealogy & Relationship Graphs mapping lineages, virtues, and allegiances.",
+      "Cinematic Audio-Visual Soundscapes and fluid Framer Motion viewport transitions."
+    ],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS v4", "Prisma", "PostgreSQL", "Framer Motion"]
   },
   {
-    id: "vaani",
+    id: "vaani-ai",
     number: "02",
-    title: "VAANI",
-    subtitle: "AI Text Assist & Inclusive Document Narration",
-    period: "March 2025 — June 2025",
+    title: "VAANI AI — TextAssist",
+    subtitle: "Multimodal AI Accessibility & Document Narration",
+    period: "March 2025 – June 2025",
+    category: "Multimodal AI & OCR",
+    image: "/images/projects/vaani.png",
+    demo: "https://vaani-ai-textassist-1.onrender.com/",
+    github: "https://github.com/Sumit692/Vaani-AI-TextAssist",
+    accentColor: "#3B82F6",
     description:
-      "An AI-driven accessibility pipeline that digitizes scanned textbooks, research papers, and PDFs into structured semantic formats with transformer-based summarization and neural text-to-speech.",
-    category: "Accessibility & NLP",
-    tech: ["Python", "Flask", "Tesseract OCR", "Hugging Face Transformers", "NLP", "Text-to-Speech", "REST APIs"],
-    features: [
-      "High-accuracy optical character recognition (OCR) extracting text from scanned books and multi-column research papers.",
-      "Transformer-based NLP pipeline distilling dense academic prose into clear conceptual synopses.",
-      "Neural text-to-speech engine producing natural synthesized audio narration.",
-      "Asynchronous Python Flask microservice managing document ingestion queues and payload streaming."
-    ],
+      "An AI-powered accessibility platform utilizing Google Gemini, Tesseract OCR, and neural text-to-speech to convert scanned textbooks, academic papers, and PDFs into structured summaries and auditory narration.",
     overview:
-      "VAANI was engineered to make complex academic literature accessible to visually impaired students and neurodivergent learners. It handles document parsing, conceptual distillation, and auditory rendering through an integrated pipeline.",
+      "VAANI is engineered to democratize academic learning for visually impaired students and auditory learners. The system accepts raw document uploads, processes degraded scans through Tesseract OCR, extracts structured sections, invokes Google Gemini for contextual simplification, and synthesizes clear vocal playback.",
     problem:
-      "Standard PDF screen readers stumble over multi-column journal papers, footnote clutter, and convoluted jargon, leaving students with fragmented audio and zero conceptual hierarchy.",
+      "Academic textbooks and research papers are frequently published in scanned or non-accessible formats, presenting high barriers for visually impaired students and non-native readers.",
     solution:
-      "An intelligent pipeline that separates layout elements, runs context-aware neural summarization, and delivers synchronized audio playback with selectable listening cadences.",
-    github: "https://github.com/Sumit692",
-    accentColor: "#60A5FA"
+      "Architected an end-to-end processing pipeline in Python and Flask combining multi-column OCR extraction, Gemini-driven text simplification, key-point extraction, and gTTS auditory playback.",
+    features: [
+      "Multimodal document ingestion accepting scanned JPGs, PNGs, and multi-page PDFs.",
+      "Tesseract OCR pipeline with OpenCV preprocessing for noise reduction and contrast normalization.",
+      "Contextual summarization powered by Google Gemini AI with customizable reading difficulty tiers.",
+      "Neural Text-to-Speech audio streaming with play, pause, seek, and playback rate controls."
+    ],
+    tech: ["Python", "Flask", "Google Gemini AI", "Tesseract OCR", "gTTS", "PyPDF2", "JavaScript"]
   },
   {
-    id: "skillcraft",
+    id: "house-price-prediction",
     number: "03",
-    title: "SKILLCRAFT INTERACTIVE SUITE",
-    subtitle: "Modern Web Utilities & Micro-Interactions",
-    period: "Sep 2025 — Dec 2025",
+    title: "Bangalore Real Estate Valuation",
+    subtitle: "AI Machine Learning Price Prediction & Voice Analytics",
+    period: "2026",
+    category: "Machine Learning & GIS",
+    image: "/images/projects/house_price.png",
+    demo: "https://house-price-prediction-model-xi.vercel.app/",
+    github: "https://github.com/Sumit692/House-Price-prediction-model-",
+    accentColor: "#10B981",
     description:
-      "A suite of responsive web utility applications engineered during an internship to explore deterministic state machines, DOM performance, localStorage persistence, and fluid user feedback.",
-    category: "Micro-interactions",
-    tech: ["HTML5", "CSS3", "JavaScript ES6+", "LocalStorage API", "Keyframe Animations", "Responsive UI"],
-    features: [
-      "Scientific Calculator supporting chained algebraic expressions and operator precedence parsing.",
-      "State-driven To-Do application with local persistent storage and filter paradigms.",
-      "Interactive Tic-Tac-Toe engine with minimax-inspired move tracking and win-state validation.",
-      "Responsive navigation bar featuring dynamic indicator follow-scroll and theme coordination."
-    ],
+      "Full-stack real estate valuation platform featuring supervised machine learning regression, interactive Leaflet location mapping, voice assistant queries, investment analytics, and market trends.",
     overview:
-      "Developed during a focused web development internship, this suite exemplifies core web fundamentals executed with zero dependency bloat, strict DOM event handling, and resilient state synchronization.",
+      "Developed a machine learning valuation system trained on thousands of Bangalore residential property transactions. Features rigorous feature engineering, outlier mitigation, and cross-validated regression models served via a Flask REST API to a responsive dashboard with interactive Leaflet maps and voice recognition.",
     problem:
-      "Modern web development often over-relies on heavy frameworks for tasks that require lightweight, rock-solid native browser execution and instant tactile feedback.",
+      "Bangalore real estate pricing exhibits extreme volatility across micro-markets, making manual appraisals inaccurate and lacking transparent geospatial context.",
     solution:
-      "Engineered vanilla-first utility modules with custom state controllers, accessible keyboard handling, and 60fps CSS transitions.",
-    github: "https://github.com/Sumit692",
-    accentColor: "#818CF8"
+      "Trained Scikit-Learn regression pipelines served via Flask REST endpoints to a responsive frontend featuring voice search, Leaflet interactive mapping, and financial amortization calculators.",
+    features: [
+      "Supervised ML Regression estimating residential property valuations with high predictive accuracy (R²).",
+      "Voice-Enabled Assistant integrating Web Speech API for hands-free natural voice queries.",
+      "Geospatial Leaflet Mapping pinpointing over 100+ Bangalore neighborhoods with price heatmaps.",
+      "Investment Analytics calculating estimated rental yield, capital appreciation, and loan EMI breakdown."
+    ],
+    tech: ["Python", "Scikit-Learn", "Flask", "Pandas", "NumPy", "JavaScript", "Leaflet", "Vercel", "Render"]
   },
   {
-    id: "lab_portfolio",
+    id: "lumi-chatbot",
     number: "04",
-    title: "AI HOLOGRAPHIC LABORATORY OS",
-    subtitle: "Experimental WebGL & Audio Engineering Study",
-    period: "July 2026",
+    title: "LUMI — AI Multi-Subject CS Tutor",
+    subtitle: "Intelligent Educational Dialogue & Practice Engine",
+    period: "2025",
+    category: "AI & Education",
+    image: "/images/projects/lumi.png",
+    demo: "https://lumi-ai-chatbot.onrender.com/",
+    github: "https://github.com/Sumit692/Lumi-AI-Chatbot",
+    accentColor: "#8B5CF6",
     description:
-      "An experimental interface study exploring interactive 3D WebGL scenes, Web Audio API synthesis, GPU-adaptive rendering tiers, and gesture-driven viewport transitions.",
-    category: "3D Systems",
-    tech: ["Next.js", "Three.js", "React Three Fiber", "Framer Motion", "GSAP", "Tailwind CSS", "Web Audio API"],
-    features: [
-      "Interactive 3D WebGL core mesh with real-time gyroscopic orientation and custom wireframe shaders.",
-      "Programmatic Web Audio API audio feedback engine with frequency modulation.",
-      "Adaptive GPU rendering tiers dynamically reducing geometry complexity on lower-powered devices.",
-      "Hardware-accelerated viewport scroll synchronization with Lenis."
-    ],
+      "An intelligent conversational tutor built with Google Gemini API and Flask to assist computer science students in mastering complex technical subjects through dialogue, code examples, and practice drills.",
     overview:
-      "A technical sandbox testing the limits of browser graphics, audio synthesis, and cinematic choreography. Demonstrates deep fluency in WebGL shaders, Three.js scene graphs, and performance optimization.",
+      "LUMI serves as an on-demand personal academic mentor. It uses specialized prompt engineering and conversational context tracking to teach foundational CS topics (DSA, OOP, Database Systems, Computer Networks, and Web Development) with step-by-step Socratic guidance.",
     problem:
-      "Complex 3D web experiences frequently suffer from high GPU thermal overhead, frame drops on mobile devices, and accessibility disconnects.",
+      "Computer science students frequently encounter conceptual roadblocks when learning abstract data structures and debugging syntax late at night when instructors are unavailable.",
     solution:
-      "Built dynamic level-of-detail (LOD) toggles, decoupled animation loops, and graceful static fallbacks ensuring stability across screen form factors.",
-    github: "https://github.com/Sumit692",
-    demo: "https://ai-portfolio-ruby.vercel.app/",
-    accentColor: "#93C5FD"
+      "Engineered a responsive conversational agent powered by Google Gemini with subject-tuned system directives, markdown code block rendering, and auto-generated practice challenges.",
+    features: [
+      "Multi-Domain CS Reasoning covering Data Structures, Algorithms, SQL, Java, and Python.",
+      "Syntactic Code Rendering with syntax highlighting and step-by-step logic annotations.",
+      "Interactive Practice Mode auto-generating conceptual flash-quizzes and debugging puzzles.",
+      "Responsive chat interface with lightweight asynchronous streaming over Flask backend."
+    ],
+    tech: ["Python", "Flask", "Google Gemini API", "JavaScript", "HTML5", "CSS3", "Render"]
+  },
+  {
+    id: "music-catalog",
+    number: "05",
+    title: "Music Catalog Insights Platform",
+    subtitle: "Full-Stack Library Engine with AI Taste Analytics",
+    period: "2026",
+    category: "Full-Stack & Cloud",
+    image: "/images/projects/music_catalog.png",
+    demo: "https://music-catalog-platform.vercel.app/",
+    github: "https://github.com/Sumit692/Music-catalog-platform",
+    accentColor: "#EC4899",
+    description:
+      "End-to-end full-stack music curation and discovery platform with iTunes Search API integration, personal library cataloging, custom track ratings, and AI-generated listening profile insights.",
+    overview:
+      "A modern full-stack web application that empowers music enthusiasts to search, catalog, rate, and analyze their favorite songs. Includes a secured backend API, MongoDB database persistence, library analytics, and an integrated AI recommendation engine that summarizes listening patterns.",
+    problem:
+      "Commercial streaming algorithms often promote sponsored tracks rather than giving listeners transparent ownership, personal notes, and analytical insights over their collections.",
+    solution:
+      "Created a unified MERN architecture (React frontend + Express/Node REST backend + MongoDB) featuring audio sample playback, custom rating scales, personal notes, and LLM-generated taste profiles.",
+    features: [
+      "Global Catalog Discovery integrating an iTunes Search API proxy for real-time metadata & audio previews.",
+      "Personal Library Persistence supporting full CRUD: save songs, assign 1-5 star ratings, and write personal notes.",
+      "AI-Powered Taste Analytics generating narrative listening profile summaries and curated recommendations.",
+      "Library Telemetry displaying top genres, average track ratings, and collection growth trends."
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS", "Vercel", "Render"]
+  },
+  {
+    id: "simple-todo",
+    number: "06",
+    title: "TaskFlow — Enterprise Task Manager",
+    subtitle: "Robust Java Servlets, JSP & Relational Database System",
+    period: "September 2025 – December 2025",
+    category: "Enterprise Systems",
+    github: "https://github.com/Sumit692/Simple-TODO-Application",
+    accentColor: "#F97316",
+    description:
+      "Multi-user enterprise task management web application engineered with Java Servlets, JSP, JDBC, and MySQL following classical MVC architecture, session authentication, and transactional integrity.",
+    overview:
+      "Developed to demonstrate foundational enterprise software principles. Features strict separation of concerns with Model-View-Controller patterns, connection-pooled JDBC access, password hashing, user session lifecycle management, and relational database operations.",
+    problem:
+      "Building resilient enterprise web backends requires deep adherence to stateless request handling, thread-safe database connection pooling, and multi-tenant session isolation.",
+    solution:
+      "Implemented Java Servlets as HTTP controllers, JSP templates for dynamic view rendering, JDBC DAO classes for SQL operations, and MySQL for relational task storage.",
+    features: [
+      "Full MVC Architecture separating business entities, servlet controllers, and presentation JSPs.",
+      "Session-Based Authentication managing secure user logins, logout timeouts, and access-control filters.",
+      "Transactional Relational Database implementing ACID-compliant CRUD operations in MySQL.",
+      "Custom Exception Envelopes and validation layers ensuring clean database states."
+    ],
+    tech: ["Java Servlets", "JSP", "JDBC", "MySQL", "Apache Tomcat", "HTML5", "CSS3", "MVC"]
+  },
+  {
+    id: "covid-management",
+    number: "07",
+    title: "COVID-19 Clinical Diagnostic System",
+    subtitle: "Healthcare Diagnostic Workflow & Laboratory Operations",
+    period: "2025",
+    category: "Healthcare Informatics",
+    github: "https://github.com/Sumit692/Covid19-Testing-Management-System",
+    accentColor: "#06B6D4",
+    description:
+      "Web-based diagnostic workflow system built with PHP and MySQL to streamline clinical patient registration, sample collection tracking, laboratory status reporting, and administrative dashboards.",
+    overview:
+      "A clinical information system designed for diagnostic testing centers. Tracks patient samples through five distinct operational stages: patient registration, phlebotomist sample collection, laboratory analysis, result generation, and digital report delivery.",
+    problem:
+      "High-throughput diagnostic testing centers experience severe administrative bottlenecks and tracking errors when relying on fragmented manual spreadsheets.",
+    solution:
+      "Constructed a centralized PHP/MySQL platform providing role-based workflows for administrators, lab technicians, and patients, with real-time test tracking and statistical reporting.",
+    features: [
+      "Complete Sample Lifecycle tracking tests across registered, collected, sent-to-lab, and reported states.",
+      "Role-Based Security & Admin Dashboard monitoring daily testing volumes and positive/negative ratios.",
+      "Public Tracking Portal allowing patients to check diagnostic status and download official test reports.",
+      "Relational MySQL Schema designed with foreign key constraints, indexes, and optimized query joins."
+    ],
+    tech: ["PHP", "MySQL", "Apache", "Bootstrap", "Chart.js", "JavaScript", "SQL"]
   }
 ];
