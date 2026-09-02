@@ -63,7 +63,7 @@ export const education: Education = {
   major: "Information Science and Engineering",
   institution: "Atria Institute of Technology",
   location: "Bangalore, India",
-  period: "Sep 2023 – May 2027",
+  period: "Aug 2023 – Aug 2027",
   cgpa: "8.3 / 10",
   affiliation: "Visvesvaraya Technological University (VTU)"
 };

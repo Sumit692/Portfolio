@@ -137,7 +137,7 @@ export default function About() {
             </div>
             <div>
               <span className="block text-[10px] uppercase text-[#52525B] mb-1">Status</span>
-              <span className="text-blue-400">Sep 2023 – May 2027 · CGPA: 8.3/10</span>
+              <span className="text-blue-400">Aug 2023 – Aug 2027 · CGPA: 8.3/10</span>
             </div>
           </div>
         </motion.div>
