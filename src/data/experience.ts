@@ -87,21 +87,18 @@ export const certifications: Certification[] = [
     title: "IDE Bootcamp Edition 3 (Phase 1) — National Bootcamp",
     issuer: "Ministry of Education & AICTE",
     description: "Selected among 1,000+ national competing engineering teams to represent Atria Institute of Technology in rapid product prototyping and technology validation.",
-    skills: ["Rapid Prototyping", "Design Thinking", "Product Validation"],
-    link: "https://drive.google.com/drive/u/1/folders/1tL80ak4_rNPoUNoAP6dDuiVMz7_Qt7cm"
+    skills: ["Rapid Prototyping", "Design Thinking", "Product Validation"]
   },
   {
     title: "1st Prize — Theory of Computation Expo",
     issuer: "Atria Institute of Technology",
     description: "Awarded first place for excellence in finite automata modeling, grammatical compilation algorithms, and state transition machine visualization.",
-    skills: ["Automata Theory", "Computation Logic", "Compiler Design"],
-    link: "https://drive.google.com/drive/u/1/folders/1tL80ak4_rNPoUNoAP6dDuiVMz7_Qt7cm"
+    skills: ["Automata Theory", "Computation Logic", "Compiler Design"]
   },
   {
     title: "1st Prize — Machine Learning Exhibition",
     issuer: "Atria Institute of Technology",
     description: "Awarded first place for end-to-end machine learning model implementation, feature engineering, and precision evaluation.",
-    skills: ["Machine Learning", "Python", "Data Processing"],
-    link: "https://drive.google.com/drive/u/1/folders/1tL80ak4_rNPoUNoAP6dDuiVMz7_Qt7cm"
+    skills: ["Machine Learning", "Python", "Data Processing"]
   }
 ];
