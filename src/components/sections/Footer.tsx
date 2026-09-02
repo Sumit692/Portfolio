@@ -23,6 +23,14 @@ export default function Footer() {
             GitHub
           </a>
           <a
+            href="https://www.linkedin.com/in/sumitkumarsingh24/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-[#F5F5F0] transition-colors"
+          >
+            LinkedIn
+          </a>
+          <a
             href="mailto:sumitkumarsingh7502@gmail.com"
             className="hover:text-[#F5F5F0] transition-colors"
           >

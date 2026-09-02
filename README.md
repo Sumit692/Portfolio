@@ -4,6 +4,7 @@
 
 🔗 **Live Deployment:** [https://sumit-portfolio-phi-eight.vercel.app/](https://sumit-portfolio-phi-eight.vercel.app/)  
 💻 **GitHub:** [https://github.com/Sumit692](https://github.com/Sumit692)  
+💼 **LinkedIn:** [https://www.linkedin.com/in/sumitkumarsingh24/](https://www.linkedin.com/in/sumitkumarsingh24/)  
 📬 **Contact:** [sumitkumarsingh7502@gmail.com](mailto:sumitkumarsingh7502@gmail.com)
 
 ---

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { LinkedinIcon } from "@/components/ui/Icons";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -80,6 +81,24 @@ export default function Contact() {
                 </span>
                 <span className="text-sm sm:text-base font-medium text-[#F5F5F0] group-hover:text-blue-400 transition-colors">
                   github.com/Sumit692
+                </span>
+              </div>
+              <ArrowUpRight size={18} className="text-[#8E8E93] group-hover:text-[#F5F5F0] transition-colors" />
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/sumitkumarsingh24/"
+              target="_blank"
+              rel="noreferrer"
+              className="p-5 rounded-2xl bg-[#111111] border border-white/[0.08] hover:border-white/[0.2] transition-colors flex items-center justify-between group"
+            >
+              <div className="space-y-1">
+                <span className="text-[10px] font-mono text-[#71717A] uppercase tracking-wider block">
+                  LINKEDIN PROFILE
+                </span>
+                <span className="text-sm sm:text-base font-medium text-[#F5F5F0] group-hover:text-blue-400 transition-colors">
+                  linkedin.com/in/sumitkumarsingh24
                 </span>
               </div>
               <ArrowUpRight size={18} className="text-[#8E8E93] group-hover:text-[#F5F5F0] transition-colors" />
