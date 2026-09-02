@@ -2,18 +2,60 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, ArrowUpRight, CheckCircle2, Loader2 } from "lucide-react";
 import { LinkedinIcon } from "@/components/ui/Icons";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) return;
+
+    setIsSubmitting(true);
+    const key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+
+    // If an access key exists, submit to Web3Forms API
+    if (key && key !== "YOUR_ACCESS_KEY_HERE" && key.trim() !== "") {
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            access_key: key,
+            name,
+            email,
+            message,
+            from_name: `Portfolio Inquiry — ${name}`,
+            subject: `New Portfolio Message from ${name}`,
+          }),
+        });
+
+        const json = await res.json();
+        if (json.success) {
+          setIsSubmitting(false);
+          setIsSubmitted(true);
+          return;
+        }
+      } catch (err) {
+        console.error("Web3Forms submission failed, falling back to direct email:", err);
+      }
+    }
+
+    // Direct mailto fallback ensures no inquiry is ever lost
+    const mailtoSubject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+    const mailtoBody = encodeURIComponent(
+      `Hello Sumit,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`
+    );
+    window.location.href = `mailto:sumitkumarsingh7502@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+    setIsSubmitting(false);
     setIsSubmitted(true);
   };
 
@@ -208,10 +250,20 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full atelier-btn-primary text-sm py-4 justify-center"
+                disabled={isSubmitting}
+                className="w-full atelier-btn-primary text-sm py-4 justify-center disabled:opacity-60 cursor-pointer"
               >
-                <span>Start a conversation</span>
-                <span>→</span>
+                {isSubmitting ? (
+                  <>
+                    <Loader2 size={16} className="animate-spin" />
+                    <span>Dispatching message...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>Start a conversation</span>
+                    <span>→</span>
+                  </>
+                )}
               </button>
             </form>
           )}
