@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sumit Kumar Singh — AI Engineer & Software Developer",
+  title: "Sumit Kumar Singh — AI Engineer, Full Stack Developer & Software Developer",
   description:
     "Portfolio of Sumit Kumar Singh, an aspiring software engineer from Bangalore building AI systems, full-stack applications, and interactive digital experiences.",
   keywords: [

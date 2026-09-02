@@ -9,7 +9,7 @@ export default function Footer() {
             SUMIT KUMAR SINGH
           </span>
           <p className="text-xs text-[#8E8E93] font-sans">
-            AI Engineer · Software Developer · Bangalore, India
+            AI Engineer · Full Stack Developer · Software Developer · Bangalore, India
           </p>
         </div>
 
