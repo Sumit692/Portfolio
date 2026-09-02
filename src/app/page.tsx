@@ -5,7 +5,7 @@ import SelectedWork from "@/components/sections/SelectedWork";
 import Experience from "@/components/sections/Experience";
 import Skills from "@/components/sections/Skills";
 import Athletics from "@/components/sections/Athletics";
-import GithubSection from "@/components/sections/GithubSection";
+import Certifications from "@/components/sections/Certifications";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 
@@ -22,7 +22,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Athletics />
-      <GithubSection />
+      <Certifications />
       <Contact />
       <Footer />
     </main>

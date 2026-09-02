@@ -1,4 +1,4 @@
-import { Milestone, Education } from "@/types";
+import { Milestone, Education, Certification } from "@/types";
 
 export const milestones: Milestone[] = [
   {
@@ -6,64 +6,97 @@ export const milestones: Milestone[] = [
     role: "Web Development Intern",
     organization: "SkillCraft Technology",
     location: "Remote / Bangalore",
-    period: "September 2025 — December 2025",
+    period: "September 2025 – December 2025",
     type: "internship",
     badge: "Internship",
     highlights: [
-      "Engineered responsive client-side web utility architectures using semantic HTML5, modern CSS3, and ES6+ JavaScript.",
-      "Built production-ready utility modules including a scientific calculator, an offline-capable LocalStorage To-Do tracker, and a responsive state-driven game engine.",
-      "Implemented reactive layouts, dark/light theme systems, custom event listeners, and performant DOM updates.",
-      "Conducted rigorous cross-browser testing and responsive viewport optimization across desktop, tablet, and mobile devices."
+      "Developed responsive web applications using HTML, CSS, and JavaScript with focus on usability, responsive design, and user experience.",
+      "Built interactive web applications including a Scientific Calculator, To-Do Web App, Tic-Tac-Toe Game, and Neon Navigation Bar.",
+      "Implemented DOM manipulation, event handling, local storage, browser notifications, animations, and responsive layouts.",
+      "Followed iterative development practices to build, test, debug, and improve web application features."
     ]
   },
   {
     id: "ide-bootcamp",
     role: "National Bootcamp Finalist",
-    organization: "IDE Bootcamp Edition 3 — Phase 1",
+    organization: "IDE Bootcamp Edition 3 (Phase 1)",
     location: "National Level",
-    period: "Early 2026",
+    period: "2026",
     type: "bootcamp",
     badge: "National Finalist",
     highlights: [
-      "Selected among 1,000+ competing engineering teams nationwide to represent Atria Institute of Technology.",
-      "Rapidly prototyped functional software solutions adhering to strict industry engineering benchmarks.",
-      "Collaborated intensively with developers, technical mentors, and product managers to pitch validated engineering prototypes."
+      "Selected for national-level boot camp among 1,000+ competing engineering teams.",
+      "Developed technology prototypes matching industry standards and practical constraints.",
+      "Collaborated intensively with developers, mentors, and product managers to pitch validated engineering solutions."
     ]
   },
   {
     id: "toc-expo",
-    role: "1st Prize Winner — Theory of Computation",
-    organization: "Theory of Computation Project Expo",
+    role: "1st Prize Winner — Theory of Computation Expo",
+    organization: "Theory of Computation Expo",
     location: "Atria Institute of Technology",
     period: "2025",
     type: "award",
     badge: "1st Prize",
     highlights: [
-      "Awarded First Place out of multiple competing departmental engineering projects.",
-      "Architected visual finite automata simulation software demonstrating state transition machines, non-deterministic transitions, and grammatical parsers."
+      "Awarded First Place at the Theory of Computation project exhibition.",
+      "Engineered visual automata and state machine simulations explaining computation structures and language models."
     ]
   },
   {
     id: "ml-exhibition",
     role: "1st Prize Winner — Machine Learning Mini Project",
-    organization: "Machine Learning Technical Exhibition",
+    organization: "Machine Learning Exhibition",
     location: "Atria Institute of Technology",
     period: "2025",
     type: "award",
     badge: "1st Prize",
     highlights: [
-      "Won First Place for outstanding machine learning workflow implementation.",
-      "Executed end-to-end data pre-processing pipelines, algorithmic feature engineering, precision tuning, and empirical model validation."
+      "Won First Place for Machine Learning mini project implementation.",
+      "Executed end-to-end model building, data pre-processing, accuracy tuning, and empirical verification."
     ]
   }
 ];
 
 export const education: Education = {
   degree: "Bachelor of Engineering",
-  major: "Information Science & Engineering (ISE)",
+  major: "Information Science and Engineering",
   institution: "Atria Institute of Technology",
   location: "Bangalore, India",
-  period: "2023 — 2027",
+  period: "Sep 2023 – May 2027",
   cgpa: "8.3 / 10",
   affiliation: "Visvesvaraya Technological University (VTU)"
 };
+
+export const certifications: Certification[] = [
+  {
+    title: "DSA using JAVA",
+    issuer: "NPTEL",
+    description: "Rigorous certification covering advanced Data Structures, Algorithmic Analysis, Graphs, Dynamic Programming, and Object-Oriented implementations in Java.",
+    skills: ["Java", "Data Structures", "Algorithms", "Problem Solving"]
+  },
+  {
+    title: "Programming in C, Software Engineering, JavaScript, AWS & Agile",
+    issuer: "Infosys Springboard",
+    description: "Comprehensive professional foundation spanning procedural programming in C, modern JavaScript, cloud infrastructure fundamentals on AWS, Software Development Life Cycle (SDLC), and Agile sprint methodologies.",
+    skills: ["AWS", "Software Engineering", "Agile Methodology", "JavaScript", "C"]
+  },
+  {
+    title: "IDE Bootcamp Edition 3 (Phase 1) — National Finalist",
+    issuer: "Ministry of Education & AICTE",
+    description: "Selected among 1,000+ national competing engineering teams to represent Atria Institute of Technology in rapid product prototyping and technology validation.",
+    skills: ["Rapid Prototyping", "Design Thinking", "Product Validation"]
+  },
+  {
+    title: "1st Prize — Theory of Computation Expo",
+    issuer: "Atria Institute of Technology",
+    description: "Awarded first place for excellence in finite automata modeling, grammatical compilation algorithms, and state transition machine visualization.",
+    skills: ["Automata Theory", "Computation Logic", "Compiler Design"]
+  },
+  {
+    title: "1st Prize — Machine Learning Exhibition",
+    issuer: "Atria Institute of Technology",
+    description: "Awarded first place for end-to-end machine learning model implementation, feature engineering, and precision evaluation.",
+    skills: ["Machine Learning", "Python", "Data Processing"]
+  }
+];

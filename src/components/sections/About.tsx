@@ -119,25 +119,25 @@ export default function About() {
           className="lg:col-span-7 space-y-6"
         >
           <p className="text-xl sm:text-2xl text-[#E8E8E3] font-light leading-relaxed">
-            An aspiring Software Engineer based in Bangalore, India, passionate about building robust algorithmic systems, full-stack web architectures, and AI-driven applications.
+            Engineering student specializing in Information Science with hands-on experience building AI-powered and full-stack applications using Python, Java, JavaScript, React, Node.js, and Flask.
           </p>
 
           <p className="text-base text-[#8E8E93] leading-relaxed">
-            Experienced with object-oriented programming in Java, data modeling with SQL, machine learning workflows in Python, and interactive 3D frontend systems. I enjoy stripping away superfluous noise to focus on clean abstractions, performant rendering pipelines, and purposeful engineering.
+            Skilled in DSA, REST APIs, databases, NLP, OCR, and data processing with experience developing practical AI solutions and deploying web applications. Passionate about AI, emerging technologies, and building scalable user-focused software.
           </p>
 
           <div className="pt-4 border-t border-white/[0.08] flex flex-wrap gap-8 text-xs font-mono text-[#8E8E93]">
             <div>
-              <span className="block text-[10px] uppercase text-[#52525B] mb-1">Affiliation</span>
-              <span className="text-[#F5F5F0]">Visvesvaraya Technological Univ.</span>
+              <span className="block text-[10px] uppercase text-[#52525B] mb-1">Institution</span>
+              <span className="text-[#F5F5F0]">Atria Institute of Technology</span>
             </div>
             <div>
-              <span className="block text-[10px] uppercase text-[#52525B] mb-1">Focus Area</span>
-              <span className="text-[#F5F5F0]">AI Systems & Interactive Graphics</span>
+              <span className="block text-[10px] uppercase text-[#52525B] mb-1">Major</span>
+              <span className="text-[#F5F5F0]">Information Science & Engineering</span>
             </div>
             <div>
               <span className="block text-[10px] uppercase text-[#52525B] mb-1">Status</span>
-              <span className="text-blue-400">Open for SWE & AI Internships</span>
+              <span className="text-blue-400">Sep 2023 – May 2027 · CGPA: 8.3/10</span>
             </div>
           </div>
         </motion.div>

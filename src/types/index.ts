@@ -34,7 +34,7 @@ export interface Education {
   location: string;
   period: string;
   cgpa: string;
-  affiliation: string;
+  affiliation?: string;
 }
 
 export interface SkillItem {
@@ -58,4 +58,11 @@ export interface Repository {
   forks: number;
   url: string;
   topics: string[];
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  description: string;
+  skills: string[];
 }
