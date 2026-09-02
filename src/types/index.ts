@@ -65,4 +65,5 @@ export interface Certification {
   issuer: string;
   description: string;
   skills: string[];
+  link?: string;
 }

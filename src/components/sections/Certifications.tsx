@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, ShieldCheck, CheckCircle2, Trophy, BookOpen } from "lucide-react";
+import { Award, ShieldCheck, Trophy, BookOpen, ExternalLink } from "lucide-react";
 import { certifications } from "@/data/experience";
 
 export default function Certifications() {
@@ -35,9 +35,9 @@ export default function Certifications() {
             className="p-8 rounded-2xl bg-[#111111] border border-white/[0.08] hover:border-white/[0.18] transition-all duration-300 flex flex-col justify-between space-y-6 shadow-xl relative group"
           >
             <div className="space-y-4">
-              <div className="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+              <div className="flex items-center justify-between border-b border-white/[0.06] pb-4 gap-4">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
                     {idx === 0 ? (
                       <BookOpen size={16} />
                     ) : idx === 1 ? (
@@ -53,14 +53,39 @@ export default function Certifications() {
                   </span>
                 </div>
 
-                <span className="text-[10px] font-mono text-[#71717A] uppercase tracking-wider">
-                  VERIFIED
-                </span>
+                {cert.link ? (
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] hover:bg-blue-500/15 border border-white/[0.08] hover:border-blue-500/30 text-[11px] font-mono text-[#D4D4D8] hover:text-blue-400 transition-all cursor-pointer shrink-0 group/link"
+                  >
+                    <span>View Certificate</span>
+                    <ExternalLink size={12} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                  </a>
+                ) : (
+                  <span className="text-[10px] font-mono text-[#71717A] uppercase tracking-wider">
+                    VERIFIED
+                  </span>
+                )}
               </div>
 
-              <h3 className="text-xl font-medium tracking-tight text-[#F5F5F0] group-hover:text-blue-400 transition-colors">
-                {cert.title}
-              </h3>
+              {cert.link ? (
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block group/title"
+                >
+                  <h3 className="text-xl font-medium tracking-tight text-[#F5F5F0] group-hover/title:text-blue-400 transition-colors">
+                    {cert.title}
+                  </h3>
+                </a>
+              ) : (
+                <h3 className="text-xl font-medium tracking-tight text-[#F5F5F0] group-hover:text-blue-400 transition-colors">
+                  {cert.title}
+                </h3>
+              )}
 
               <p className="text-xs sm:text-sm text-[#8E8E93] leading-relaxed">
                 {cert.description}
