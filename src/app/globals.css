@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-atelier: #090909;
+    --bg-surface: #111111;
+    --bg-card: #141414;
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-medium: rgba(255, 255, 255, 0.14);
+    --text-primary: #f5f5f0;
+    --text-secondary: #8e8e93;
+    --text-muted: #5c5c60;
+    --accent-cobalt: #3b82f6;
+    --accent-cobalt-glow: rgba(59, 130, 246, 0.25);
+  }
+
+  html {
+    scroll-behavior: auto;
+    background-color: var(--bg-atelier);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-atelier);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    selection-background-color: rgba(59, 130, 246, 0.3);
+    selection-color: #ffffff;
+  }
+
+  ::selection {
+    background-color: rgba(59, 130, 246, 0.35);
+    color: #ffffff;
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+/* Analog Grain Noise Filter */
+.film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Glass & Surface Treatments */
+.atelier-surface {
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.atelier-card {
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.atelier-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Magnetic / Interactive Subtle Button */
+.atelier-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #f5f5f0;
+  color: #090909;
+  font-weight: 500;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.atelier-btn-primary:hover {
+  background: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.15);
+}
+
+.atelier-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: #f5f5f0;
+  font-weight: 500;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.atelier-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Typography Helpers */
+.text-balance {
+  text-wrap: balance;
+}
