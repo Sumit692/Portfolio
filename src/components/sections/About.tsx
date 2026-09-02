@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Counter from "@/components/ui/Counter";
@@ -36,6 +37,8 @@ export default function About() {
     },
   ];
 
+  const [imageError, setImageError] = useState(false);
+
   return (
     <section id="about" className="py-28 lg:py-36 border-t border-white/[0.07] px-6 md:px-12 max-w-7xl mx-auto">
       {/* Section Header with oversized section numeral */}
@@ -71,15 +74,29 @@ export default function About() {
             <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-white/30 z-20 pointer-events-none" />
 
             {/* Photo Container with Monochrome Film Grading */}
-            <div className="relative aspect-[4/5] w-full rounded-xl overflow-hidden bg-[#18181B]">
-              <Image
-                src="/images/sumit.jpg"
-                alt="Sumit Kumar Singh portrait"
-                fill
-                sizes="(max-width: 768px) 100vw, 400px"
-                className="object-cover object-center grayscale contrast-105 brightness-95 group-hover:scale-[1.02] transition-transform duration-700 ease-out"
-                priority
-              />
+            <div className="relative aspect-[4/5] w-full rounded-xl overflow-hidden bg-[#141414] border border-white/[0.04]">
+              {!imageError ? (
+                <Image
+                  src="/images/sumit.jpg"
+                  alt="Sumit Kumar Singh portrait"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  className="object-cover object-center grayscale contrast-105 brightness-95 group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+                  onError={() => setImageError(true)}
+                  priority
+                />
+              ) : (
+                <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center space-y-4 bg-gradient-to-b from-[#18181B] to-[#0E0E10]">
+                  <div className="w-20 h-20 rounded-full border border-white/10 flex items-center justify-center font-mono text-xl font-light tracking-widest text-[#F5F5F0]">
+                    SKS
+                  </div>
+                  <div className="space-y-1 font-mono text-xs text-[#8E8E93]">
+                    <div className="tracking-widest uppercase text-white/70">Sumit Kumar Singh</div>
+                    <div className="text-[10px] text-[#52525B]">12.9716° N, 77.5946° E · BLR</div>
+                  </div>
+                </div>
+              )}
 
               {/* Subtle film grain texture overlay */}
               <div className="absolute inset-0 film-grain pointer-events-none opacity-40 mix-blend-overlay" />

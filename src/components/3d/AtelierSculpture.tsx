@@ -82,17 +82,15 @@ export default function AtelierSculpture() {
         <mesh ref={outerGlassRef}>
           <dodecahedronGeometry args={[1.5, 0]} />
           <meshPhysicalMaterial
-            roughness={0.12}
-            transmission={0.88}
-            thickness={1.2}
-            ior={1.48}
-            reflectivity={0.7}
-            clearcoat={0.9}
+            roughness={0.15}
+            metalness={0.15}
+            clearcoat={1}
             clearcoatRoughness={0.1}
-            color="#EAEAEA"
+            color="#384C6E"
             wireframe={false}
             transparent
-            opacity={0.85}
+            opacity={0.6}
+            reflectivity={0.9}
           />
         </mesh>
 
