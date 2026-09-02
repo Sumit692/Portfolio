@@ -92,8 +92,8 @@ export default function CustomCursor() {
             cursorType === "hover"
               ? "rgba(255, 255, 255, 0.35)"
               : cursorType === "project"
-              ? "transparent"
-              : "transparent",
+              ? "rgba(255, 255, 255, 0)"
+              : "rgba(255, 255, 255, 0)",
         }}
         transition={{ type: "spring", damping: 25, stiffness: 300, mass: 0.5 }}
         className="flex items-center justify-center rounded-full border backdrop-blur-[2px] shadow-sm select-none"

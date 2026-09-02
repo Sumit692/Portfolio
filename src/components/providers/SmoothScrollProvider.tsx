@@ -31,6 +31,7 @@ export default function SmoothScrollProvider({
     });
 
     lenisRef.current = lenis;
+    (window as any).__lenis = lenis;
 
     let rafId: number;
     function raf(time: number) {
