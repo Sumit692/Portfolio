@@ -18,12 +18,12 @@ export const milestones: Milestone[] = [
   },
   {
     id: "ide-bootcamp",
-    role: "National Bootcamp Finalist",
+    role: "National Bootcamp",
     organization: "IDE Bootcamp Edition 3 (Phase 1)",
     location: "National Level",
     period: "2026",
     type: "bootcamp",
-    badge: "National Finalist",
+    badge: "National Bootcamp",
     highlights: [
       "Selected for national-level boot camp among 1,000+ competing engineering teams.",
       "Developed technology prototypes matching industry standards and practical constraints.",
@@ -82,7 +82,7 @@ export const certifications: Certification[] = [
     skills: ["AWS", "Software Engineering", "Agile Methodology", "JavaScript", "C"]
   },
   {
-    title: "IDE Bootcamp Edition 3 (Phase 1) — National Finalist",
+    title: "IDE Bootcamp Edition 3 (Phase 1) — National Bootcamp",
     issuer: "Ministry of Education & AICTE",
     description: "Selected among 1,000+ national competing engineering teams to represent Atria Institute of Technology in rapid product prototyping and technology validation.",
     skills: ["Rapid Prototyping", "Design Thinking", "Product Validation"]

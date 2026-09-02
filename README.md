@@ -53,7 +53,7 @@ This website departs completely from conventional cyber/HUD/terminal cliches. It
 
 ## 🏆 Honors & Extracurricular Disciplines
 
-- **IDE Bootcamp Edition 3 (Phase 1):** National Bootcamp Finalist (selected among 1,000+ teams)
+- **IDE Bootcamp Edition 3 (Phase 1):** National Bootcamp (selected among 1,000+ teams)
 - **Theory of Computation Expo:** 1st Prize Winner (Automata & grammatical parser design)
 - **Machine Learning Exhibition:** 1st Prize Winner (End-to-end predictive pipeline)
 - **VTU Football Champion (2024, 2025):** Starting varsity player; Central Zone Champions
