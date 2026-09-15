@@ -25,6 +25,9 @@ The portfolio combines editorial-style visual design with interactive engineerin
 
 The goal is to communicate not only **what I build**, but also how I approach engineering, design, problem solving, and continuous learning.
 
+**Portfolio**
+https://portfolio-sigma-dusky-p8v24icdqd.vercel.app/
+
 ---
 
 ## ✨ Highlights
@@ -505,8 +508,6 @@ https://www.linkedin.com/in/sumitkumarsingh24/
 **Email**
 [sumitkumarsingh7502@gmail.com](mailto:sumitkumarsingh7502@gmail.com)
 
-**Portfolio**
-https://portfolio-sigma-dusky-p8v24icdqd.vercel.app/
 
 ---
 
